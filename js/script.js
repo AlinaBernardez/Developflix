@@ -17,7 +17,7 @@ renderMovies(listaThriller, contenedorThriller);
 renderMovies(listaAventura, contenedorAventura);
 
 function renderMovies(lista, contenedor) {
-    return lista.map(item => {
+    return lista.forEach(item => {
         const img = document.createElement('img');
         img.className = 'poster'
         const title = document.createElement('p');
